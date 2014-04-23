@@ -61,3 +61,16 @@ JSON_C_DIR=/path/to/json_c/install
 CFLAGS += -I$(JSON_C_DIR)/include/json-c
 LDFLAGS+= -L$(JSON_C_DIR)/lib -ljson-c
 ```
+
+
+
+
+Building for Android `libjson-c`
+--------------------------------
+
+Steps for building 
+```make
+1) Run "./configure"
+2) Run "make Android.mk" - Mostly not required
+3) Run "ndk-build NDK_APPLICATION_MK=`pwd`/Application.mk"
+```
