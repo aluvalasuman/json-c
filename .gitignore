@@ -53,3 +53,7 @@
 *.o
 /libjson-c.la
 /libjson.la
+libs/
+obj/
+m4/
+
